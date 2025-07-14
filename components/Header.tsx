@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, EnvelopeClosedIcon, FileTextIcon, PersonIcon } from "@radix-ui/react-icons";
 
 const socialLinks = [
   {
@@ -25,6 +25,12 @@ const socialLinks = [
     href: "mailto:hrithik@example.com",
     icon: EnvelopeClosedIcon,
   },
+  {
+    name: "Resume",
+    href: "/resume.pdf",
+    icon: FileTextIcon,
+    download: "Hrithik_Nayak_Resume.pdf",
+  },
 ];
 
 export default function Header() {
@@ -37,19 +43,20 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
+          {/* Name and Title - Left Side */}
           <motion.div
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <h1 className="text-xl font-mono font-semibold text-foreground">
+            <h1 className="text-2xl md:text-3xl font-mono font-bold text-foreground">
               Hrithik Nayak
             </h1>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base md:text-lg text-muted-foreground font-medium">
               Software Engineer / AI Builder
             </p>
           </motion.div>
 
-          {/* Social Media Icons */}
+          {/* Social Media Icons & Resume - Right Side */}
           <motion.div 
             className="flex items-center gap-2"
             initial={{ opacity: 0, x: 20 }}
@@ -71,17 +78,24 @@ export default function Header() {
                 >
                   <Button
                     variant="ghost"
-                    size="sm"
+                    size="lg"
                     asChild
-                    className="text-muted-foreground hover:text-foreground transition-colors duration-300 h-8 w-8 p-0"
+                    className="text-foreground hover:text-foreground hover:bg-accent/30 transition-all duration-300 h-12 w-12 p-1 rounded-lg relative group"
                   >
                     <a
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Connect on ${social.name}`}
+                      title={social.name}
+                      {...(social.download && { download: social.download })}
                     >
-                      <IconComponent className="w-4 h-4" />
+                      <IconComponent className="w-9 h-9" />
+                      
+                      {/* Custom Tooltip */}
+                      <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-card/90 backdrop-blur-sm border border-border/50 text-foreground text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-lg z-50">
+                        {social.name}
+                      </div>
                     </a>
                   </Button>
                 </motion.div>
