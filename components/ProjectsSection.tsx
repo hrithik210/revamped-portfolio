@@ -2,41 +2,7 @@
 
 import { motion } from "framer-motion";
 import ProjectCard from './ProjectCard';
-
-const projects = [
-  {
-    title: "AI Chat Platform",
-    description: "Real-time chat with AI models using WebSocket and LangChain",
-    tech: ["Next.js", "TypeScript", "LangChain", "WebSocket", "PostgreSQL"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project1.jpg",
-  },
-  {
-    title: "E-commerce Dashboard",
-    description: "Analytics dashboard with real-time metrics and inventory management",
-    tech: ["React", "Node.js", "MongoDB", "Chart.js", "Stripe"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project2.jpg",
-  },
-  {
-    title: "Voice Assistant Bot",
-    description: "Dialogflow-powered voice assistant with custom integrations",
-    tech: ["Python", "Dialogflow", "Google Cloud", "FastAPI", "React"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project3.jpg",
-  },
-  {
-    title: "Blockchain Tracker",
-    description: "Real-time cryptocurrency portfolio tracker with price alerts",
-    tech: ["Go", "React", "WebSocket", "Redis", "PostgreSQL"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project4.jpg",
-  },
-];
+import { projects } from "../data";
 
 export default function ProjectsSection() {
   return (

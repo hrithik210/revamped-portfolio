@@ -1,11 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const skills = [
-  "React", "Next.js", "TypeScript", "Go", "Python", "Node.js", 
-  "PostgreSQL", "MongoDB", "LangChain", "Dialogflow", "Docker", "AWS"
-];
+import { skills } from "../data";
 
 export default function TechStackSection() {
   return (

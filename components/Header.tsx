@@ -2,36 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, EnvelopeClosedIcon, FileTextIcon, PersonIcon } from "@radix-ui/react-icons";
-
-const socialLinks = [
-  {
-    name: "GitHub",
-    href: "https://github.com/hrithiknayak",
-    icon: GitHubLogoIcon,
-  },
-  {
-    name: "LinkedIn", 
-    href: "https://linkedin.com/in/hrithiknayak",
-    icon: LinkedInLogoIcon,
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/hrithiknayak", 
-    icon: TwitterLogoIcon,
-  },
-  {
-    name: "Email",
-    href: "mailto:hrithik@example.com",
-    icon: EnvelopeClosedIcon,
-  },
-  {
-    name: "Resume",
-    href: "/resume.pdf",
-    icon: FileTextIcon,
-    download: "Hrithik_Nayak_Resume.pdf",
-  },
-];
+import { personalInfo, socialLinks } from "../data";
 
 export default function Header() {
   return (
@@ -49,10 +20,10 @@ export default function Header() {
             transition={{ duration: 0.2 }}
           >
             <h1 className="text-2xl md:text-3xl font-mono font-bold text-foreground">
-              Hrithik Nayak
+              {personalInfo.name}
             </h1>
             <p className="text-base md:text-lg text-muted-foreground font-medium">
-              Software Engineer / AI Builder
+              {personalInfo.title}
             </p>
           </motion.div>
 

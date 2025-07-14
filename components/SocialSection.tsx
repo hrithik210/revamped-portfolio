@@ -2,34 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons";
-
-const socialLinks = [
-  {
-    name: "GitHub",
-    href: "https://github.com/hrithiknayak",
-    icon: GitHubLogoIcon,
-    color: "hover:text-gray-300",
-  },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/hrithiknayak",
-    icon: LinkedInLogoIcon,
-    color: "hover:text-blue-400",
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/hrithiknayak",
-    icon: TwitterLogoIcon,
-    color: "hover:text-blue-300",
-  },
-  {
-    name: "Email",
-    href: "mailto:hrithik@example.com",
-    icon: EnvelopeClosedIcon,
-    color: "hover:text-green-400",
-  },
-];
+import { socialLinks } from "../data";
 
 export default function SocialSection() {
   return (

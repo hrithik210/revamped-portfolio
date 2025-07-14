@@ -2,15 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
-const experiences = [
-  {
-    role: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    duration: "2023 - Present",
-    description: "Led development of AI-powered chat platform serving 10k+ users daily",
-  }
-];
+import { experience } from "../data";
 
 export default function ExperienceSection() {
   return (
@@ -28,7 +20,7 @@ export default function ExperienceSection() {
       </motion.div>
 
       <div className="space-y-4 lg:pl-4">
-          {experiences.map((exp, index) => (
+          {experience.map((exp, index) => (
             <motion.div
               key={exp.company}
               className="relative"
