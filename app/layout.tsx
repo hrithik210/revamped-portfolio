@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hrithik Nayak - Software Engineer & AI Builder",
+  title: "Hrithik's Portfolio",
   description: "Personal portfolio of Hrithik Nayak - Software Engineer specializing in AI development",
 };
 
