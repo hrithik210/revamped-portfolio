@@ -12,7 +12,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           {/* Name and Title - Left Side */}
           <motion.div
@@ -23,12 +23,12 @@ export default function Header() {
             whileHover={{ scale: 1.005 }}
           >
             <div className="relative">
-              <h1 className="premium-name text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-2 cursor-default">
+              <h1 className="premium-name text-xl md:text-2xl lg:text-3xl font-bold tracking-tight mb-1 cursor-default">
                 {personalInfo.name}
               </h1>
               
               <p 
-                className="premium-title text-sm md:text-base lg:text-lg tracking-wide cursor-default"
+                className="premium-title text-sm md:text-base tracking-wide cursor-default"
                 data-text={personalInfo.title}
               >
                 {personalInfo.title}
@@ -60,7 +60,7 @@ export default function Header() {
                     variant="ghost"
                     size="lg"
                     asChild
-                    className="text-foreground hover:text-foreground hover:bg-accent/30 transition-all duration-300 h-12 w-12 p-1 rounded-lg relative group"
+                    className="text-foreground hover:text-foreground hover:bg-accent/30 transition-all duration-300 h-10 w-10 p-1 rounded-lg relative group"
                   >
                     <a
                       href={social.href}
@@ -70,7 +70,7 @@ export default function Header() {
                       title={social.name}
                       {...(social.download && { download: social.download })}
                     >
-                      <IconComponent className="w-9 h-9" />
+                      <IconComponent className="w-7 h-7" />
                       
                       {/* Custom Tooltip */}
                       <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-card/90 backdrop-blur-sm border border-border/50 text-foreground text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap shadow-lg z-50">
