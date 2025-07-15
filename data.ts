@@ -92,7 +92,7 @@ export const skills: string[] = [
 
 export const experience: Experience[] = [
   {
-    role: "Backend Engineer",
+    role: "Software Engineer",
     company: "Yatra Online Ltd.",
     duration: "feb 2025 - present",
     description: `
