@@ -16,15 +16,24 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Name and Title - Left Side */}
           <motion.div
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.2 }}
+            className="luxury-container"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            whileHover={{ scale: 1.005 }}
           >
-            <h1 className="text-2xl md:text-3xl font-mono font-bold text-foreground">
-              {personalInfo.name}
-            </h1>
-            <p className="text-base md:text-lg text-muted-foreground font-medium">
-              {personalInfo.title}
-            </p>
+            <div className="relative">
+              <h1 className="premium-name text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-2 cursor-default">
+                {personalInfo.name}
+              </h1>
+              
+              <p 
+                className="premium-title text-sm md:text-base lg:text-lg tracking-wide cursor-default"
+                data-text={personalInfo.title}
+              >
+                {personalInfo.title}
+              </p>
+            </div>
           </motion.div>
 
           {/* Social Media Icons & Resume - Right Side */}

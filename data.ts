@@ -42,8 +42,8 @@ export interface PersonalInfo {
 // Personal information
 export const personalInfo: PersonalInfo = {
   name: "Hrithik Nayak",
-  title: "Software Engineer / AI Builder",
-  email: "hrithik@example.com",
+  title: "Full Stack Developer x AI Agents",
+  email: "hrithikkumar79@outlook.com",
   resumeUrl: "/resume.pdf",
   resumeFilename: "Hrithik_Nayak_Resume.pdf"
 };

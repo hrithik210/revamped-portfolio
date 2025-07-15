@@ -14,7 +14,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 bg-gradient-to-r from-indigo-400 via-blue-500 to-cyan-600 bg-clip-text text-transparent">
             Let's Connect
           </h2>
           <p className="text-muted-foreground mb-4 max-w-md mx-auto">

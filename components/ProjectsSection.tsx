@@ -6,43 +6,99 @@ import { projects } from "../data";
 
 export default function ProjectsSection() {
   return (
-    <section className="py-12 px-6">
-      <div className="container mx-auto">
+    <section className="py-8 px-6 relative overflow-hidden">
+      {/* Premium background elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-transparent to-gray-800/10 pointer-events-none"></div>
+      
+      <div className="container mx-auto max-w-7xl relative z-10">
+        {/* Compact Premium Section Header */}
         <motion.div
-          className="mb-6"
+          className="mb-12 mt-8 text-center"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-3 text-foreground">
-            Featured Projects
-          </h2>
-          <div className="flex items-center gap-4">
-            <p className="text-muted-foreground text-base">
-              Scroll through my projects
-            </p>
-            <motion.div 
-              className="hidden md:flex items-center gap-1 text-accent"
-              animate={{ x: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <span className="text-lg text-white ">→</span>
-            </motion.div>
+          <div className="relative inline-block">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-3 premium-name cursor-default">
+              Featured Projects
+            </h2>
+            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-24 h-0.5 bg-gradient-to-r from-transparent via-white/40 to-transparent rounded-full"></div>
           </div>
+          
+        
+        
         </motion.div>
 
-        {/* Desktop: Horizontal scroll */}
-        <div className="hidden md:block">
-          <div className="horizontal-scroll scroll-snap-x flex gap-6 overflow-x-auto pb-4">
+        {/* Premium Projects Grid */}
+        <div className="space-y-12">
+          {/* Desktop: Premium horizontal scroll */}
+          <div className="hidden lg:block">
+            <div className="premium-scroll-container flex gap-8 overflow-x-auto pb-8 px-4">
+              {projects.map((project, index) => (
+                <motion.div
+                  key={project.title}
+                  className="flex-shrink-0 w-96"
+                  initial={{ opacity: 0, x: 120, rotateY: 15 }}
+                  whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+                  transition={{ 
+                    duration: 0.8, 
+                    delay: 0.2 * index,
+                    ease: "easeOut",
+                    type: "spring",
+                    stiffness: 100
+                  }}
+                  viewport={{ once: true }}
+                  whileHover={{ 
+                    y: -8,
+                    scale: 1.02,
+                    rotateY: -2,
+                    transition: { 
+                      type: "spring", 
+                      stiffness: 400, 
+                      damping: 30,
+                      duration: 0.3
+                    }
+                  }}
+                  style={{ perspective: 1000 }}
+                >
+                  <ProjectCard {...project} index={index} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Tablet: Two column grid */}
+          <div className="hidden md:grid lg:hidden grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
-                className="scroll-snap-center flex-shrink-0 w-72 lg:w-80"
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.15 * index }}
+                viewport={{ once: true }}
                 whileHover={{ 
-                  y: -2, 
+                  y: -6, 
+                  scale: 1.02,
+                  transition: { type: "spring", stiffness: 300, damping: 30 }
+                }}
+              >
+                <ProjectCard {...project} index={index} />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Mobile: Single column */}
+          <div className="md:hidden space-y-8">
+            {projects.map((project, index) => (
+              <motion.div
+                key={project.title}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 * index }}
+                viewport={{ once: true }}
+                whileHover={{ 
+                  y: -4, 
                   scale: 1.01,
                   transition: { type: "spring", stiffness: 300, damping: 30 }
                 }}
@@ -51,25 +107,6 @@ export default function ProjectsSection() {
               </motion.div>
             ))}
           </div>
-        </div>
-
-        {/* Mobile: Vertical stack */}
-        <div className="md:hidden space-y-6">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              whileHover={{ 
-                y: -2, 
-                scale: 1.01,
-                transition: { type: "spring", stiffness: 300, damping: 30 }
-              }}
-            >
-              <ProjectCard {...project} index={index} />
-            </motion.div>
-          ))}
         </div>
       </div>
     </section>
