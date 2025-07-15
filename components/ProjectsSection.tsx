@@ -6,7 +6,7 @@ import { projects } from "../data";
 
 export default function ProjectsSection() {
   return (
-    <section className="py-8 px-6 relative overflow-hidden">
+    <section className="py-4 px-6 relative overflow-hidden">
       {/* Premium background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-transparent to-gray-800/10 pointer-events-none"></div>
       
