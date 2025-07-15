@@ -44,7 +44,7 @@ export const personalInfo: PersonalInfo = {
   name: "Hrithik Nayak",
   title: "Full Stack Developer x AI Agents",
   email: "hrithikkumar79@outlook.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "https://drive.google.com/file/d/1D_BbUzEN_ODn3o0uQqvV8V99EuZVtMTS/view?usp=sharing",
   resumeFilename: "Hrithik_Nayak_Resume.pdf"
 };
 
@@ -52,33 +52,33 @@ export const personalInfo: PersonalInfo = {
 export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
-    href: "https://github.com/hrithiknayak",
+    href: "https://github.com/hrithik210",
     icon: GitHubLogoIcon,
     color: "hover:text-gray-300"
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/hrithiknayak",
+    href: "https://www.linkedin.com/in/ramanand-nayak-b2a622259/",
     icon: LinkedInLogoIcon,
     color: "hover:text-blue-400"
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/hrithiknayak",
+    href: "https://x.com/Hrithik_018",
     icon: TwitterLogoIcon,
     color: "hover:text-blue-300"
   },
   {
     name: "Email",
-    href: "mailto:hrithik@example.com",
+    href: "mailto:hrithikkumar79@outlook.com",
     icon: EnvelopeClosedIcon,
     color: "hover:text-green-400"
   },
   {
     name: "Resume",
-    href: "/resume.pdf",
+    href: "https://drive.google.com/file/d/1D_BbUzEN_ODn3o0uQqvV8V99EuZVtMTS/view?usp=sharing",
     icon: FileTextIcon,
-    download: "Hrithik_Nayak_Resume.pdf"
+    download: "https://drive.google.com/file/d/1D_BbUzEN_ODn3o0uQqvV8V99EuZVtMTS/view?usp=sharing"
   }
 ];
 
@@ -100,46 +100,50 @@ export const skills: string[] = [
 
 export const experience: Experience[] = [
   {
-    role: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    duration: "2023 - Present",
-    description: "Led development of AI-powered chat platform serving 10k+ users daily"
+    role: "Backend Engineer",
+    company: "Yatra Online Ltd.",
+    duration: "feb 2025 - present",
+    description: `
+      Built a hotel ranking system with ETL, geolocation (PostGIS), and a Flask API serving processed business logic.||
+      Built a Hotel's Discount System, cutting API response time by 10x using Flask and MongoDB.||
+      Developed a customer facing chatbot using Dialogflow, FastAPI, Redis (caching), and MySQL.
+    `
   }
 ];
 
 export const projects: Project[] = [
   {
-    title: "AI Chat Platform",
-    description: "Real-time chat with AI models using WebSocket and LangChain",
-    tech: ["Next.js", "TypeScript", "LangChain", "WebSocket", "PostgreSQL"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project1.jpg"
+    title: "Airnote",
+    description: "A real-time messaging app",
+    tech: ["Next.js", "TypeScript", "React", "Pusher", "PostgreSQL","Tailwind", "Prisma"],
+    github: "https://github.com/hrithik210/messenger",
+    demo: "https://airnote-ebon.vercel.app/",
+    thumbnail: "/airnote.png"
   },
   {
-    title: "E-commerce Dashboard",
-    description: "Analytics dashboard with real-time metrics and inventory management",
-    tech: ["React", "Node.js", "MongoDB", "Chart.js", "Stripe"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project2.jpg"
+    title: "Token Launchpad",
+    description: "Platform for launching crypto tokens",
+    tech: ["Next.js","Typescript", "React","Solana","Tailwind", "Web3.js", ],
+    github: "https://github.com/hrithik210/token-launchpad",
+    demo: "token-launchpad-nine.vercel.app",
+    thumbnail: "/token-launchpad.png"
   },
   {
-    title: "Voice Assistant Bot",
-    description: "Dialogflow-powered voice assistant with custom integrations",
-    tech: ["Python", "Dialogflow", "Google Cloud", "FastAPI", "React"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project3.jpg"
+    title: "Luvana",
+    description: "A Web3 dApp that allows users to mint personalized NFTs representing relationships, with on-chain metadata and dynamic SVG generation.",
+    tech: ["Next.js", "React", "Tailwind", "Ethers.js", "Solidity","Web3"],
+    github: "https://github.com/hrithik210/Luvana",
+    demo: "https://luvana.vercel.app",
+    thumbnail: "/luvana.png"
   },
   {
-    title: "Blockchain Tracker",
-    description: "Real-time cryptocurrency portfolio tracker with price alerts",
-    tech: ["Go", "React", "WebSocket", "Redis", "PostgreSQL"],
-    github: "https://github.com/hrithiknayak",
-    demo: "https://demo.example.com",
-    thumbnail: "/project4.jpg"
-  }
+    title: "Medium-Blog Platform",
+    description: "Platform for publishing and reading blogs",
+    tech: ["React", "TypeScript","Tailwind", "Node.js", "PostgreSQL", "Express", "Prisma"],
+    github: "https://github.com/hrithik210/medium-blog",
+    demo: "https://medium-blog-blush-sigma.vercel.app/",
+    thumbnail: "/medium.png"
+  },
 ];
 
 // Default export for convenience

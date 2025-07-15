@@ -73,9 +73,14 @@ export default function ExperienceSection() {
                     </CardHeader>
                     
                     <CardContent className="relative z-10">
-                      <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-                        {exp.description}
-                      </p>
+                      <div className="space-y-3">
+                        {exp.description.split('||').map((point, index) => (
+                          <div key={index} className="flex items-start gap-3 text-gray-300 leading-relaxed text-base md:text-lg">
+                            <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-3 flex-shrink-0"></div>
+                            <p className="flex-1">{point.trim()}</p>
+                          </div>
+                        ))}
+                      </div>
                       
                       {/* Premium bottom accent */}
                       <div className="mt-6 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
