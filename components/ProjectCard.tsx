@@ -88,7 +88,7 @@ export default function ProjectCard({
             <Button size="sm" asChild className="flex-1 text-xs bg-white/90 text-black hover:bg-white hover:text-black transition-all duration-300">
               <a href={demo} target="_blank" rel="noopener noreferrer">
                 <ExternalLinkIcon className="w-3 h-3 mr-1" />
-                Demo
+                Live
               </a>
             </Button>
           </div>

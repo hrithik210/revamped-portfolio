@@ -28,12 +28,15 @@ export default function TechStackSection() {
           {skills.map((skill, index) => (
             <motion.span
               key={skill}
-              className="px-3 py-2 text-sm rounded-full bg-card/50 hover:bg-accent/20 transition-colors text-foreground border border-border/50 hover:border-accent/50 font-mono"
+              className="px-3 py-2 text-sm rounded-full bg-card/50 text-foreground border border-border/50 font-mono cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 hover:border-blue-400/30 hover:bg-card/70 hover:backdrop-blur-sm"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: 0.05 * index }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ 
+                y: -2,
+                transition: { duration: 0.2, ease: "easeOut" }
+              }}
             >
               {skill}
             </motion.span>

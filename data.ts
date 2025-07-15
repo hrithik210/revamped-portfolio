@@ -84,18 +84,10 @@ export const socialLinks: SocialLink[] = [
 
 // Portfolio data
 export const skills: string[] = [
-  "React",
-  "Next.js", 
-  "TypeScript",
-  "Go",
-  "Python",
-  "Node.js",
-  "PostgreSQL",
-  "MongoDB",
-  "LangChain",
-  "Dialogflow",
-  "Docker",
-  "AWS"
+    'Golang','JavaScript', 'TypeScript','Python', 'React','Next.js', 'Tailwind', 
+    'Node.js', 'Express.js', 'MongoDB','Langchain',  'PostgreSQL', 'Prisma', 'Docker',
+    'MySQL', 'Git', 'GitHub' , 'HTML', 'CSS',
+    'AWS','REDIS', 'Cloudflare workers'
 ];
 
 export const experience: Experience[] = [
