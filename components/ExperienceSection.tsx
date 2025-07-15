@@ -17,14 +17,12 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
         >
           <div className="relative inline-block">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 premium-name cursor-default">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 cursor-default bg-gradient-to-r from-yellow-200 via-yellow-200 to-yellow-300 bg-clip-text text-transparent">
               Professional Experience
             </h2>
-            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-white/40 to-transparent rounded-full"></div>
+            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-orange-400/40 to-transparent rounded-full"></div>
           </div>
-          <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto leading-relaxed">
-            Building innovative solutions and leading teams in the modern tech landscape
-          </p>
+        
         </motion.div>
 
         {/* Premium Timeline */}

@@ -13,7 +13,7 @@ export default function TechStackSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-xl md:text-2xl font-bold mb-3 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 bg-clip-text text-transparent">
+        <h2 className="text-2xl md:text-2xl font-bold mb-3 bg-gradient-to-r from-[#ADEBB3] via-emerald-500 to-[#ADEBB3] bg-clip-text text-transparent">
           Tech Stack
         </h2>
       </motion.div>

@@ -22,12 +22,12 @@ export default function ContactSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
-              <a href="mailto:hrithik@example.com">
+              <a href="mailto:hrithikkumar79@outlook.com">
                 Get In Touch
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="https://github.com/hrithiknayak" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/hrithik210" target="_blank" rel="noopener noreferrer">
                 <GitHubLogoIcon className="w-5 h-5 mr-2" />
                 GitHub
               </a>
