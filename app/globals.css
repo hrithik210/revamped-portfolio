@@ -640,6 +640,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.premium-scroll-container > * {
+  scroll-snap-align: start;
+}
+
 .premium-scroll-container::-webkit-scrollbar {
   height: 8px;
 }

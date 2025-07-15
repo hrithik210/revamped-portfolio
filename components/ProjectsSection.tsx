@@ -33,22 +33,14 @@ export default function ProjectsSection() {
         {/* Premium Projects Grid */}
         <div className="space-y-12">
           {/* Desktop: Premium horizontal scroll */}
-          <div className="hidden lg:block">
-            <div className="premium-scroll-container flex gap-8 overflow-x-auto pb-8 px-4">
+          <div className="hidden lg:block relative">
+            <div className="premium-scroll-container flex gap-6 overflow-x-auto pb-8 px-4">
               {projects.map((project, index) => (
                 <motion.div
                   key={project.title}
-                  className="flex-shrink-0 w-96"
-                  initial={{ opacity: 0, x: 120, rotateY: 15 }}
-                  whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
-                  transition={{ 
-                    duration: 0.8, 
-                    delay: 0.2 * index,
-                    ease: "easeOut",
-                    type: "spring",
-                    stiffness: 100
-                  }}
-                  viewport={{ once: true }}
+                  className="flex-shrink-0"
+                  style={{ width: '380px', height: '420px', perspective: 1000 }}
+                  initial={{ opacity: 1, x: 0, rotateY: 0 }}
                   whileHover={{ 
                     y: -8,
                     scale: 1.02,
@@ -60,7 +52,6 @@ export default function ProjectsSection() {
                       duration: 0.3
                     }
                   }}
-                  style={{ perspective: 1000 }}
                 >
                   <ProjectCard {...project} index={index} />
                 </motion.div>
