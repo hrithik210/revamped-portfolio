@@ -105,6 +105,14 @@ export const experience: Experience[] = [
 
 export const projects: Project[] = [
   {
+  title: "HigherMe",
+  description: "An agentic system that tracks, scores, and reflects on your daily progress",
+  tech: ["Python", "FastAPI", "LangChain", "Next.js", "PostgreSQL", "React", "TypeScript"],
+  github: "https://github.com/hrithik210/Ai-agentverse",
+  demo: "https://higher-me.vercel.app",
+  thumbnail: "/higherme.png"
+  },
+  {
     title: "Airnote",
     description: "A real-time messaging app",
     tech: ["Next.js", "TypeScript", "React", "Pusher", "PostgreSQL","Tailwind", "Prisma"],
