@@ -125,7 +125,7 @@ export const projects: Project[] = [
     description: "Platform for launching crypto tokens",
     tech: ["Next.js","Typescript", "React","Solana","Tailwind", "Web3.js", ],
     github: "https://github.com/hrithik210/token-launchpad",
-    demo: "token-launchpad-nine.vercel.app",
+    demo: "https://token-launchpad-nine.vercel.app/",
     thumbnail: "/token-launchpad.png"
   },
   {
