@@ -44,7 +44,7 @@ export const personalInfo: PersonalInfo = {
   name: "Hrithik Nayak",
   title: "Software Engineer",
   email: "hrithikkumar79@outlook.com",
-  resumeUrl: "https://drive.google.com/file/d/1GS8gE8krJ4x5KrF2DngaizX6RDefMndK/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view",
   resumeFilename: "Hrithik_Nayak_Resume.pdf"
 };
 
