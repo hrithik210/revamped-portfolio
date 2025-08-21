@@ -104,6 +104,15 @@ export const experience: Experience[] = [
 ];
 
 export const projects: Project[] = [
+    {
+    title: "AnalytIQ",
+    description: "An automated AI analyst team that analyzes, visualizes, and narrates insights from your data in minutes",
+    tech: ["Python", "FastAPI", "AutoGen", "Supabase", "React"],
+    github: "https://github.com/hrithik210/AnalytIQ",
+    demo: "https://analytiq-seven.vercel.app/",
+    thumbnail: "/analytiq.png"
+  }
+  ,
   {
   title: "HigherMe",
   description: "An agentic system that tracks, scores, and reflects on your daily progress",
