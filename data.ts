@@ -44,7 +44,7 @@ export const personalInfo: PersonalInfo = {
   name: "Hrithik Nayak",
   title: "Software Engineer",
   email: "hrithikkumar79@outlook.com",
-  resumeUrl: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view",
+  resumeUrl: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view?usp=sharing,
   resumeFilename: "Hrithik_Nayak_Resume.pdf"
 };
 
@@ -78,7 +78,7 @@ export const socialLinks: SocialLink[] = [
     name: "Resume",
     href: "https://drive.google.com/file/d/1GS8gE8krJ4x5KrF2DngaizX6RDefMndK/view?usp=sharing",
     icon: FileTextIcon,
-    download: "https://drive.google.com/file/d/1D_BbUzEN_ODn3o0uQqvV8V99EuZVtMTS/view?usp=sharing"
+    download: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view?usp=sharing"
   }
 ];
 
