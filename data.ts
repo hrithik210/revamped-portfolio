@@ -58,7 +58,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/ramanand-nayak-b2a622259/",
+    href: "https://www.linkedin.com/in/hrithik-nayak-b2a622259/",
     icon: LinkedInLogoIcon,
     color: "hover:text-blue-400"
   },
