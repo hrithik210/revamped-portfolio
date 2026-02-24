@@ -94,11 +94,19 @@ export const experience: Experience[] = [
   {
     role: "Software Engineer",
     company: "Yatra Online Ltd.",
-    duration: "feb 2025 - present",
+    duration: "feb 2025 - sep 2025",
     description: `
       Built a hotel ranking system with ETL, geolocation (PostGIS), and a Flask API serving processed business logic.||
       Built a Hotel's Discount System, cutting API response time by 10x using Flask and MongoDB.||
       Developed a customer facing chatbot using Dialogflow, FastAPI, Redis (caching), and MySQL.
+    `
+  },
+  {
+    role: "Software Engineer",
+    company: "Niche Mates (Germany)",
+    duration: "oct 2025 - present",
+    description: `
+      Doing lots of cool stuff that I can't talk about yet :) Stay tuned for updates on this exciting journey!
     `
   }
 ];
