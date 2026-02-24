@@ -56,11 +56,12 @@ export default function ExperienceSection() {
                       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                         <div className="flex-1">
                           <CardTitle className="text-xl md:text-2xl font-bold text-white mb-2 group-hover:text-white/95 transition-colors">
-                            {exp.role}
+                            
+                            {exp.company}
                           </CardTitle>
                           <CardDescription className="text-lg font-semibold text-gray-300 flex items-center gap-2">
                             <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-                            {exp.company}
+                            {exp.role}
                           </CardDescription>
                         </div>
                         <div className="flex items-center gap-2 text-sm font-mono text-gray-400 bg-gray-800/50 px-4 py-2 rounded-full border border-gray-700/50">
