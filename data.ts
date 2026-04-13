@@ -44,7 +44,7 @@ export const personalInfo: PersonalInfo = {
   name: "Hrithik Nayak",
   title: "Software Engineer",
   email: "hrithikkumar79@outlook.com",
-  resumeUrl: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1eJG-9TY2fM3nJjYlk4DNnUYfozyblpMn/view?usp=sharing",
   resumeFilename: "Hrithik_Nayak_Resume.pdf"
 };
 
@@ -58,7 +58,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/hrithik-nayak-b2a622259/",
+    href: "https://www.linkedin.com/in/hrithik-b2a622259/",
     icon: LinkedInLogoIcon,
     color: "hover:text-blue-400"
   },
@@ -70,15 +70,15 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Email",
-    href: "mailto:hrithikkumar79@outlook.com",
+    href: "mailto:hrithiknayak1233@gmail.com",
     icon: EnvelopeClosedIcon,
     color: "hover:text-green-400"
   },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1eJG-9TY2fM3nJjYlk4DNnUYfozyblpMn/view?usp=sharing",
     icon: FileTextIcon,
-    download: "https://drive.google.com/file/d/1CFVvTZ8NgSE_tSUptOv1BYE8dLBODKUx/view?usp=sharing"
+    download: "https://drive.google.com/file/d/1eJG-9TY2fM3nJjYlk4DNnUYfozyblpMn/view?usp=sharing"
   }
 ];
 
