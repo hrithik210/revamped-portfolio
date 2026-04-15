@@ -103,7 +103,7 @@ export const experience: Experience[] = [
   },
   {
     role: "Software Engineer",
-    company: "Niche Mates (Germany)",
+    company: "Everbloom (Armsterdam)",
     duration: "oct 2025 - present",
     description: `
       Doing lots of cool stuff that I can't talk about yet :) Stay tuned for updates on this exciting journey!
